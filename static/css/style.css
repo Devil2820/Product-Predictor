@@ -1,0 +1,154 @@
+/* Custom Styles for Mobile Phone Finder */
+
+body {
+    background-color: #f8f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.phone-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+    border-radius: 10px;
+}
+
+.phone-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.phone-card .card-header {
+    border-radius: 10px 10px 0 0;
+    font-size: 0.9rem;
+}
+
+.phone-card .card-body {
+    padding: 1.5rem;
+}
+
+.phone-card .price-section h5 {
+    font-weight: bold;
+}
+
+.phone-image-placeholder {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.empty-state {
+    padding: 3rem 0;
+}
+
+.alert-info {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+footer {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .phone-card {
+        margin-bottom: 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 123, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #007bff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Price formatting */
+.price-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.original-price {
+    color: #6c757d;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.discount-badge {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Search tips styling */
+.search-tips {
+    background-color: #e7f3ff;
+    border-left: 4px solid #007bff;
+}
+
+.search-tips ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Hover effects for cards */
+.card:hover .card-header {
+    background-color: #0056b3 !important;
+}
+
+/* Responsive grid */
+@media (max-width: 576px) {
+    .col-md-4.col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
